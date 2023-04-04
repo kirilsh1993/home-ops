@@ -84,12 +84,12 @@ spec:
       runAsGroup: 1001
       fsGroup: 1001
       fsGroupChangePolicy: OnRootMismatch
-    volumeClaimTemplates:
-      - name: config
-        mountPath: /config
-        accessMode: ReadWriteOnce
-        size: 10Gi
-        storageClass: local-path
+    # volumeClaimTemplates:
+    #   - name: config
+    #     mountPath: /config
+    #     accessMode: ReadWriteOnce
+    #     size: 10Gi
+    #     storageClass: local-path
     persistence:
       media:
         enabled: true
@@ -98,7 +98,7 @@ spec:
         accessMode: ReadWriteOnce
         readOnly: true
         storageClassName: smb-slow
-        size: 1Gi
+        size: 10Gi
     resources:
       requests:
         cpu: 10m
