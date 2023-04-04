@@ -5,7 +5,7 @@ resources:
   # Pre Flux-Kustomizations
   - ./namespace.yaml
   # Flux-Kustomizations
-  # - ./csi-driver-smb/ks.yaml
+  - ./csi-driver-smb/ks.yaml
   - ./kube-vip/ks.yaml
   - ./local-path-provisioner/ks.yaml
   - ./metrics-server/ks.yaml
