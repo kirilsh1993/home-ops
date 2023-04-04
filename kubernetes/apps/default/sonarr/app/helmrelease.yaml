@@ -90,15 +90,15 @@ spec:
     #     accessMode: ReadWriteOnce
     #     size: 10Gi
     #     storageClass: local-path
-    persistence:
-      media:
-        enabled: true
-        type: pvc
-        mountPath: /sonarr
-        accessMode: ReadWriteOnce
-        readOnly: true
-        storageClassName: smb-slow
-        size: 10Gi
+    # persistence:
+    #   media:
+    #     enabled: true
+    #     type: pvc
+    #     mountPath: /sonarr
+    #     accessMode: ReadWriteOnce
+    #     readOnly: true
+    #     storageClassName: smb-slow
+    #     size: 10Gi
     resources:
       requests:
         cpu: 10m
