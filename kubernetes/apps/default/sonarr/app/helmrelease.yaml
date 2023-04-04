@@ -95,6 +95,7 @@ spec:
         enabled: true
         type: pvc
         mountPath: /sonarr
+        accessMode: ReadWriteOnce
         readOnly: true
         storageClassName: smb-slow
         size: 1Gi
