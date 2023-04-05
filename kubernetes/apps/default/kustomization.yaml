@@ -7,4 +7,4 @@ resources:
   # Flux-Kustomizations
   - ./echo-server/ks.yaml
   - ./hajimari/ks.yaml
-  - ./sonarr/ks.yaml
+  # - ./sonarr/ks.yaml
