@@ -28,6 +28,7 @@ spec:
   values:
     hajimari:
       title: Apps
+      lightTheme: paper
       darkTheme: espresso
       alwaysTargetBlank: true
       showGreeting: false
