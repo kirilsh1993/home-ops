@@ -72,24 +72,24 @@ spec:
             10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
           hajimari.io/icon: mdi:television-classic
         hosts:
-          - host: &host "{{ .Release.Name }}.red-panda.xyz"
+          - host: &host "{{ .Release.Name }}.${SECRET_DOMAIN}"
             paths:
               - path: /
                 pathType: Prefix
         tls:
           - hosts:
               - *host
-    podSecurityContext:
-      runAsUser: 1001
-      runAsGroup: 1001
-      fsGroup: 1001
-      fsGroupChangePolicy: OnRootMismatch
-    # volumeClaimTemplates:
-    #   - name: config
-    #     mountPath: /config
-    #     accessMode: ReadWriteOnce
-    #     size: 10Gi
-    #     storageClass: local-path
+    # podSecurityContext:
+    #   runAsUser: 1001
+    #   runAsGroup: 1001
+    #   fsGroup: 1001
+    #   fsGroupChangePolicy: OnRootMismatch
+    volumeClaimTemplates:
+      - name: config
+        mountPath: /config
+        accessMode: ReadWriteOnce
+        size: 10Gi
+        storageClass: longhorn
     # persistence:
     #   media:
     #     enabled: true
@@ -99,9 +99,3 @@ spec:
     #     readOnly: true
     #     storageClassName: smb-slow
     #     size: 10Gi
-    resources:
-      requests:
-        cpu: 10m
-        memory: 250Mi
-      limits:
-        memory: 2000Mi
