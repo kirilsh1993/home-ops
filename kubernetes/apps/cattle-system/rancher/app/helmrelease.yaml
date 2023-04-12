@@ -27,12 +27,12 @@ spec:
     keepHistory: false
   values:
     hostname: "{{ .Release.Name }}.${SECRET_DOMAIN}"
-    ingress:
-      extraAnnotations:
-        nginx.ingress.kubernetes.io/whitelist-source-range: |
-          10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
-        hajimari.io/icon: mdi:account-cowboy-hat
-      ingressClassName: nginx
+    # ingress:
+    #   extraAnnotations:
+    #     nginx.ingress.kubernetes.io/whitelist-source-range: |
+    #       10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+    #     hajimari.io/icon: mdi:account-cowboy-hat
+    #   ingressClassName: nginx
     replicas: 1
     global:
       cattle:
