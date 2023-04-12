@@ -5,4 +5,4 @@ resources:
   # Pre Flux-Kustomizations
   - ./namespace.yaml
   #   # Flux-Kustomizations
-  - ./rancher/ks.yaml
+  # - ./rancher/ks.yaml
