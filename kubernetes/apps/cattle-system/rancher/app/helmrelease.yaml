@@ -40,6 +40,8 @@ spec:
         source: rancher
         secretName: tls-rancher-ingress
     replicas: 1
+    certmanager:
+      version: "1.11.1"
     global:
       cattle:
         psp:
