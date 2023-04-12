@@ -34,6 +34,10 @@ spec:
         hajimari.io/icon: mdi:account-cowboy-hat
       ingressClassName: nginx
     replicas: 1
+    global:
+      cattle:
+        psp:
+          enabled: false
   valuesFrom:
     - kind: Secret
       name: rancher-credentials
