@@ -40,7 +40,10 @@ spec:
       defaultEnable: true
       namespaceSelector:
         matchNames:
+          - cattle-system
           - default
+          - flux-system
+          - monitoring
     ingress:
       main:
         enabled: true
