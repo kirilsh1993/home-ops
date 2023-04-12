@@ -14,5 +14,6 @@ resources:
   - ./longhorn.yaml
   - ./metallb.yaml
   - ./metrics-server.yaml
+  - ./rancher.yaml
   - ./stakater.yaml
   - ./weave-gitops.yaml
