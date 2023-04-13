@@ -29,7 +29,7 @@ spec:
     hajimari:
       title: Apps
       lightTheme: paper
-      darkTheme: blackbeard
+      darkTheme: blackboard
       alwaysTargetBlank: true
       showGreeting: false
       showAppGroups: false
@@ -42,6 +42,7 @@ spec:
         matchNames:
           - default
           - flux-system
+          - longhorn-system
     ingress:
       main:
         enabled: true
