@@ -40,7 +40,6 @@ spec:
       replicas: 1
     ingress:
       enabled: true
-      ingressClassName: nginx
       host: "longhorn.${SECRET_DOMAIN}"
       tls: true
       annotations:

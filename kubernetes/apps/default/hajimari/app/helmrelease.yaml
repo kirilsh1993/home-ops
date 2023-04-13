@@ -29,7 +29,7 @@ spec:
     hajimari:
       title: Apps
       lightTheme: paper
-      darkTheme: espresso
+      darkTheme: blackbeard
       alwaysTargetBlank: true
       showGreeting: false
       showAppGroups: false
@@ -40,9 +40,8 @@ spec:
       defaultEnable: true
       namespaceSelector:
         matchNames:
-          - cattle-system
           - default
-          - monitoring
+          - flux-system
     ingress:
       main:
         enabled: true
